@@ -1,2 +1,278 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!-- ***Home SLider Section*** -->
+      <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <!-- First Slider -->
+          <div class="item active" style="background-image: url(https://farm4.staticflickr.com/3596/3389058334_4eaa67a392_o_d.jpg)">
+            <div class="caption">
+              <h1 class="animated fadeInLeftBig">Beautiful and Creative Web Pages</h1>
+              <p class="animated fadeInRightBig">Bootstrap - Responsive Design</p>
+              <a data-scroll class="btn btn-start animated fadeInUpBig" href="#about">More About Myself</a>
+            </div>
+          </div>
+          <!-- Second Slider -->
+          <div class="item" style="background-image: url(https://static.pexels.com/photos/1029/landscape-mountains-nature-clouds.jpg)">
+            <div class="caption">
+              <h1 class="animated fadeInLeftBig">Responsive Designs For All Devices</h1>
+              <p class="animated fadeInRightBig">Bootstrap - Responsive Design</p>
+              <a data-scroll class="btn btn-start animated fadeInUpBig" href="#about">More About Myself</a>
+            </div>
+          </div>
+          <!-- Third Slider -->
+          <div class="item" style="background-image: url(http://blog.jimdo.com/wp-content/uploads/2014/01/tree-247122.jpg)">
+            <div class="caption">
+              <h1 class="animated fadeInLeftBig">The Best Experience for the Individual</h1>
+              <p class="animated fadeInRightBig">Bootstrap - Responsive Design</p>
+              <a data-scroll class="btn btn-start animated fadeInUpBig" href="#about">More About Myself</a>
+            </div>
+          </div>
+        </div>       
+        <!-- Slider Controls -->
+        <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+        <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+        <a id="tohash" href="#about"><i class="fa fa-angle-down"></i></a>
+      </div>
+      
+      
+      
+      <!-- ***Nav Bar Section*** -->
+      <div class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">                 
+              <li><%= link_to "About", '#about', class:"scroll" %></li>
+              <li><%= link_to "Knowledge", '#knowledge', class:"scroll" %></li>
+              <li><%= link_to "Contact", '#contact', class:"scroll" %></li>
+              <li><%= link_to "Resume", '#contact', class:"scroll" %></li>                          
+            </ul>
+          </div>
+        </div>
+      </div>
+          
+          
+          
+    <!-- ***About Section*** -->
+    <section id="about">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-10 col-lg-offset-1">
+            <h2>Who is Sonny Godwin?</h2>
+            <hr>
+          </div>           
+          <div class="row">
+            <!-- Key Point: Quality -->
+            <div class="col-xs-12 col-sm-6 col-md-3 key-point">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-diamond fa-stack-1x text-primary"></i>
+              </span>
+              <h4>
+                  <strong>Quality</strong>
+              </h4>
+              <p>Above all else quality is the most important in my core of values. Quality
+              leads to happy clients and repeat customers.</p>
+            </div>            
+            <!-- Key Point: Knowledge -->
+            <div class="col-xs-12 col-sm-6 col-md-3 key-point">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-graduation-cap fa-stack-1x text-primary"></i>
+              </span>
+              <h4>
+                  <strong>Knowledge & Learning</strong>
+              </h4>
+              <p>I have a thirst for knowledge like no other. I am very passionate about new technology and
+              incorporating it into web design.</p>
+            </div>            
+            <!-- Key Point: Clean Code -->
+            <div class="col-xs-12 col-sm-6 col-md-3 key-point">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-gift fa-stack-1x text-primary"></i>
+              </span>
+              <h4>
+                  <strong>Clean Code</strong>
+              </h4>
+              <p>I enjoy to write clean and commented code so that other programmers can work easily and 
+              effectively with me or after me.</p>
+            </div>           
+            <!-- Key Point: Passion -->
+            <div class="col-xs-12 col-sm-6 col-md-3 key-point">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-heart fa-stack-1x text-primary"></i>
+              </span>
+              <h4>
+                  <strong>Passion</strong>
+              </h4>
+              <p>Through my career I have had such a passion for coding and technology. I could honestly
+              do it day and night!</p>
+            </div>                 
+          </div>         
+          <div class="row">
+            <!-- Key Point: Team Player -->
+            <div class="col-xs-12 col-sm-6 col-md-3 key-point">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-users fa-stack-1x text-primary"></i>
+              </span>
+              <h4>
+                  <strong>Team Player</strong>
+              </h4>
+              <p>I work great with other people and excel in a team environment. My years as a project
+              manager taught me when to follow and when to lead.</p>
+            </div>         
+            <!-- Key Point: Fun -->
+            <div class="col-xs-12 col-sm-6 col-md-3 key-point">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-hand-spock-o fa-stack-1x text-primary"></i>
+              </span>
+              <h4>
+                  <strong>Fun</strong>
+              </h4>
+              <p>I work as a professional but there's no rule that says you can't have fun at
+              work! If there is, its no place for me!</p>
+            </div>            
+            <!-- Key Point: Back End Experience -->
+            <div class="col-xs-12 col-sm-6 col-md-3 key-point">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-server fa-stack-1x text-primary"></i>
+              </span>
+              <h4>
+                  <strong>Back End Experience</strong>
+              </h4>
+              <p>With some back end experience I know how important the front end can be to the
+              whole project. I strive to complement those developers as a team.</p>
+            </div>           
+            <!-- Key Point: Work Ethic -->
+            <div class="col-xs-12 col-sm-6 col-md-3 key-point">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-tasks fa-stack-1x text-primary"></i>
+              </span>
+              <h4>
+                  <strong>Work Ethic</strong>
+              </h4>
+              <p>Having been raised old fashioned, I also pride myself on my determination and work
+              ethic. I strive for excellence in everything I do.</p>
+            </div>                 
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <!-- ***Mission Statement*** -->
+    <div id="mission-statement">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2> Mission Statement </h2>
+            <p>To provide exceptional web design and front end development for clients and/or owners. I strive to provide
+            a responsive web layout that functions in multiple browsers while maintaining functionality and user experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ***Knowledge Section*** -->
+    <div id="knowledge">
+      <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+          <h2>Knowledge</h2>
+          <p>As a web designer and front end developer I like to design visually appealing websites
+          that focus on a strong user experience through simple functional design. As a former project manager I pride myself 
+          on working directly with clients and really understanding what requirements they are looking for in an application and relating this
+          to a beautiful and dynamic application that meets the clients' goals. This communication creates a win-win-win situation in the final 
+          product as well as the business relationship.</p>
+          <p>My knowledge and expertise relate to the following:</p>          
+          <ul>
+            <li> Responsive Web Design
+              <ul>
+                <li> Wireframes</li>
+                <li> Mockups </li>
+                <li> Bootstrap </li>
+              </ul>
+            </li>
+            <br>
+            <li> Front-End Development
+              <ul>
+                <li> HTML5</li>
+                <li> CSS3 </li>
+                <li> Javascript/jQuery </li>
+                <li> Performance </li>
+                <li> Animations </li>
+              </ul>
+            </li>
+            <br>
+          </ul>                
+          <%= image_tag("http://www.uclasificados.com.co/images/1429822799367310.png", class:"knowledge-pic") %>  
+          <br>
+          <p>As a front end developer I user the tools above to achieve web pages that can be accessed on a wide range 
+          of devices such as mobile phones, tablets, desktop computers, even TV's via a responsive design. I optimise the site
+          for performance metrics and use technology progressively as not to overwelm the user. All my designs are scalable
+          and well documented so that any developer could edit or make changes.</p>          
+          <p>To find out more about my knowledge and experience, feel free to contact me below!</p>
+        </div> 
+      </div>
+    </div>
+        
+    
+    
+    <!-- ***Contact Section*** -->
+    <div id="contact">
+      <!-- Form Header -->
+      <div class="container-fluid contact-header">
+        <div class="row">
+          <div class="col-md-6 col-lg-offset-3">
+            <h2> Contact Me </h2>
+            <p>To find out more about my experience or work history feel free to contact me below.</p>
+          </div>
+        </div>  
+        
+        <!-- Entry Form -->
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <form id="main-contact-form" name="contact-form" method="post" action="#">
+              <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
+              </div>                        
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Send Now</button>
+              </div>
+            </form>   
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
